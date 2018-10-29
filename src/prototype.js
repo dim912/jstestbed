@@ -4,13 +4,16 @@
 function PrintStuff(myDocuments) {
     this.documents = myDocuments;
 }
+
 //adding prototype methods
 PrintStuff.prototype.print = function () {
     console.log(this.documents);
 }
 //creating objects
-var newObj = new PrintStuff("I am a new Object and I can print.");
+var newObj = new PrintStuff("I am a new Object and I can print."); //so this keyword refer to the object
 newObj.print();
+console.log(newObj.documents)
+
 
 //From where prototype comes from
 //------------------------------------
