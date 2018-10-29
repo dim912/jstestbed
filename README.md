@@ -1,11 +1,10 @@
 # jstestbed
 application to test javascript
 
-Important
-
-conceptually there is no similarity between java(usual OOP) and and javascript internals. Only the syntax looks alike.
 
 #To understand javascript better know
+
+conceptually there is no similarity between java(usual OOP) and and javascript internals. Only the syntax looks alike. So better forget JAVA when write javascript.
 
 1. javascript functions are just veriables. They are not bound to the objects where they are defined. They can be passed anywhere as usual objects.
 
