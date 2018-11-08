@@ -34,3 +34,12 @@ console.log(arrTwo) //[ 'foo', 'bar', [ 'thing', 'otherThing' ], 'baz' ]
 var arrThree = ['foo', 'bar', ...arrOne, 'baz']
 
 console.log(arrThree) //[ 'foo', 'bar', 'thing', 'otherThing', 'baz' ]
+
+//EX4
+
+var obj1 = { "key1": "val1", "key2": "val2" }
+
+console.log(obj1)
+console.log(...obj1.key1)
+console.log(...obj1['key1'])
+console.log({ ...obj1 })
