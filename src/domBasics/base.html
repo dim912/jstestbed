@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TEST PAGE</title>
+    <script src='./test.js'></script>
+
+</head>
+
+<body onload="onload()">
+
+    <button onclick="add()">ADD</Button>
+    <button onclick="substract()">SUBSTRACT</Button></button>
+    <p id='value'></p>
+
+    <br />
+    <!-- event listners can be added as a property, when the elemnet is initiated-->
+    <button onclick="add()">ADD</Button>
+    <button onclick="substract()">SUBSTRACT</Button></button>
+    <p id='value'></p>
+
+    <!-- event listner can be set on the elemnet object -->
+    <button id="setOnElementButton">SET ON ELEMENT BUTTON</Button>
+    <script>
+        document.getElementById("setOnElementButton").onclick = () => { alert('clicked on onClickButton') }  </script>
+
+    <br />
+    <br />
+
+    <!-- event listner can be set on the elemnet object -->
+    <button id="setAsAListner">SET LISTNER</Button>
+    <script>
+        var element = document.getElementById("setAsAListner");
+        var handler = () => {
+            alert("SET LISTNER button is clicked")
+        }
+        element.addEventListener("click", handler)
+    </script>
+
+    <button id="funButton" onmouseover="handleOnMouseOver(event)">FUN BUTTON</button>
+    <script>
+        function handleOnMouseOver(e) {
+            console.log(this)
+            console.log(e)
+        }
+    </script>
+
+</body>
+
+</html>
