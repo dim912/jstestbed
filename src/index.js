@@ -1,4 +1,4 @@
-var ScopesInNode = require('./scopesInNodeUs')
+var ScopesInNode = require('./scopesInNodeJs')
 
 
 console.log('this is indide index.js => ' + withoutVar)

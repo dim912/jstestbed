@@ -30,14 +30,14 @@ var peopleConstructor = function (name, age, state) {
     this.state = state
 
     //The problem here is every object created from peopleConstructor function has its own printPerson function which is redundent
-    temp.printPerson = function () {
+    this.printPerson = function () {
         console.log(this.name + "," + this.age + "," + this.state)
     }
     //return null This is wrong. constructor functions should not return null. But it can return something else
 }
 
-const person3 = peopleFactory("john", 23, "Califonia");
-const person4 = peopleFactory("Kim", 27, "SC")
+const person3 = new peopleConstructor("john", 23, "Califonia");
+const person4 = new peopleConstructor("Kim", 27, "SC")
 
 person3.printPerson()
 person4.printPerson()

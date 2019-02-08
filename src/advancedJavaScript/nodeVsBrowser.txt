@@ -1,10 +1,10 @@
 Node
-    =>has global object
+    => has global object
     => every new file is a new module. 
     => ** inside every file this keyword refers to {} in module object (`this` context is always inside the module)
     => If global object is need to be referred use => GLOBAL
 
 
 Browser
-    =>has window object and document object
+    =>has window object and document(window.document) object. the loaded js scripts or console inputs get loaded on window.document object
     =>default context is window object always

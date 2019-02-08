@@ -25,3 +25,31 @@ new Promise(fun).then(ans => {
 })
 
 console.log("End of coding");
+
+
+
+///////////////// HOW TO RETURN A PROMISE FROM A FUNCTION ///////////////////
+
+function calcAsync(a, b) {
+
+    let total = a + b;
+
+    return new Promise((resolve, reject) => {
+
+        if (a != undefined && b != undefined) {
+            resolve(total);
+        }
+        else {
+            reject('Wrong arguments')
+        }
+    });
+}
+
+//so the callers of my function can write async style codes
+calcAsync(1, 2)
+    .then(ans => {
+        console.log('sum is :' + ans);
+    })
+    .catch(err => {
+        console.log('Error is :' + err)
+    })

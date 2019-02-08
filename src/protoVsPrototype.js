@@ -87,6 +87,5 @@ console.log(consObj.__proto__ == constructorFunc.prototype)
  * Arrow functions
  * a. can not be used as constructors
  * b. does not have this, arguments, supper or new.target
- * 
- * 
+ *
  */
