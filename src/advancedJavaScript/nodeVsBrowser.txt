@@ -8,3 +8,24 @@ Node
 Browser
     =>has window object and document(window.document) object. the loaded js scripts or console inputs get loaded on window.document object
     =>default context is window object always
+
+
+Node JS and javascript at the browser are really single threaded
+-----------------------------------------------------------------
+
+The javascript is really single threaded
+
+In nodeJs -> IO calls are all handed over to libuv which is written in C++
+
+*libuv internally use epoll
+
+Once the IO call is done => libuv put an entry into nodejs event loop. That is it nothing more nothing less.
+
+In browser 
+-----------
+
+Browser has native APIs bound with UI components which are written in C++.
+
+so, all the browser manupulation and heavy calls are handed over to C++
+
+and once the operations are done C++ code insert to event loop(called event queues)
