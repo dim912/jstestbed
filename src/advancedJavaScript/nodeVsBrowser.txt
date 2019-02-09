@@ -24,8 +24,11 @@ Once the IO call is done => libuv put an entry into nodejs event loop. That is i
 In browser 
 -----------
 
-Browser has native APIs bound with UI components which are written in C++.
+Browser has native APIs bound with UI components which are written in C++ ( called as webAPI)
 
 so, all the browser manupulation and heavy calls are handed over to C++
 
 and once the operations are done C++ code insert to event loop(called event queues)
+
+
+Note : all the setTimeouts and setIntervals also goes to webApi or libuv
